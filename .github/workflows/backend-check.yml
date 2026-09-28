@@ -9,6 +9,8 @@ on:
       - 'provider/**'
       - 'tests/api_integration.py'
       - 'Dockerfile'
+      - '.devcontainer/**'
+      - 'scripts/start-codespace.sh'
       - 'deploy/**'
       - '.github/workflows/backend-check.yml'
 permissions:
@@ -21,6 +23,8 @@ jobs:
       - uses: actions/checkout@v5
       - name: Build backend container
         run: docker build -t glass-api:check .
+      - name: Build Codespaces development image
+        run: docker build --target development -t glass-api:development .
       - name: Run isolated API integration checks
         run: |
           docker run --rm --entrypoint /bin/sh \

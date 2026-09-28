@@ -4,6 +4,10 @@ C++17/Drogon API for the Glass Music Qt application. It provides accounts, admin
 
 Storage adapters support local files, MongoDB GridFS, Firebase Cloud Storage, Google Drive and S3-compatible services. SQLite stores the account/catalog index; provider credentials are AES-256-GCM encrypted with a separate private storage key. New catalogs and playlists start empty. Bundled synthetic WAV files are integration-test fixtures, not automatically published songs.
 
+## GitHub-only testing
+
+Use [GitHub Codespaces](deploy/CODESPACES.md) for a temporary backend endpoint. It stops with the development environment and is subject to included usage limits; it is not permanent free hosting.
+
 ## Deploy
 
 This repository contains backend code, not a hosted server. GitHub Actions builds/tests the container; it does not publish app releases. Deploy the Docker image to a container host or VPS with HTTPS and persistent storage. See [deployment instructions](deploy/README.md).

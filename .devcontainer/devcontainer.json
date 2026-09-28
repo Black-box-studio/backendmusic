@@ -1,0 +1,25 @@
+{
+  "name": "Glass Music backend (test)",
+  "build": {
+    "dockerfile": "../Dockerfile",
+    "context": "..",
+    "target": "development"
+  },
+  "forwardPorts": [
+    8787
+  ],
+  "portsAttributes": {
+    "8787": {
+      "label": "Glass Music API",
+      "protocol": "http",
+      "onAutoForward": "notify"
+    }
+  },
+  "containerEnv": {
+    "GLASS_STORAGE_PYTHON": "/opt/storage-env/bin/python"
+  },
+  "postCreateCommand": "cmake -S server -B build-codespace -G Ninja -DCMAKE_BUILD_TYPE=Release && cmake --build build-codespace --parallel 2",
+  "postStartCommand": "bash scripts/start-codespace.sh",
+  "remoteUser": "root",
+  "shutdownAction": "stopContainer"
+}

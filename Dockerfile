@@ -13,6 +13,10 @@ RUN cmake -S server -B build -G Ninja -DCMAKE_BUILD_TYPE=Release \
     && python3 -m venv /opt/storage-env \
     && /opt/storage-env/bin/pip install --no-cache-dir -r provider/storage-requirements.txt
 
+FROM build AS development
+RUN apt-get update && apt-get install -y --no-install-recommends git openssh-client util-linux \
+    && rm -rf /var/lib/apt/lists/*
+
 FROM ubuntu:26.04
 ENV DEBIAN_FRONTEND=noninteractive \
     GLASS_STORAGE_PYTHON=/opt/storage-env/bin/python \
