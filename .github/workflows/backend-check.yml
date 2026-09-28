@@ -1,0 +1,28 @@
+name: Backend checks (no release)
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+  pull_request:
+    paths:
+      - 'server/**'
+      - 'provider/**'
+      - 'tests/api_integration.py'
+      - 'Dockerfile'
+      - 'deploy/**'
+      - '.github/workflows/backend-check.yml'
+permissions:
+  contents: read
+jobs:
+  backend:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build backend container
+        run: docker build -t glass-api:check .
+      - name: Run isolated API integration checks
+        run: |
+          docker run --rm --entrypoint /bin/sh \
+            -v "$PWD/tests:/opt/glass/tests:ro" glass-api:check -c \
+            'python3 /opt/glass/tests/api_integration.py --server /opt/glass/glass-music-server'

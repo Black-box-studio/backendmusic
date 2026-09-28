@@ -1,0 +1,264 @@
+{
+  "mixes": {
+    "chill": {
+      "title": "Chill Mix",
+      "subtitle": "Julia Wolf, Khalid, ayokay and more",
+      "art": "78d38.png",
+      "quickArt": "68dc7.png",
+      "crop": [
+        1.2088,
+        1.2088,
+        -0.1044,
+        -0.0824
+      ],
+      "quickCrop": [
+        1.4634,
+        1.4634,
+        -0.2317,
+        -0.1829
+      ],
+      "trackIds": [
+        1,
+        3,
+        4
+      ],
+      "id": "chill"
+    },
+    "pop": {
+      "title": "Pop Mix",
+      "subtitle": "Hey Violet, VÉRITÉ, Timeflies and more",
+      "art": "d468f.png",
+      "quickArt": "1fc04.png",
+      "trackIds": [
+        2,
+        5,
+        6
+      ],
+      "id": "pop",
+      "crop": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "quickCrop": [
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    "pheelz": {
+      "title": "Pheelz Mix",
+      "subtitle": "WizKid, Asake, Tiwa Savage and more",
+      "art": "8f0e7.png",
+      "trackIds": [
+        3,
+        2,
+        5
+      ],
+      "id": "pheelz",
+      "crop": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "quickCrop": [
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    "indie": {
+      "title": "Indie Mix",
+      "subtitle": "Joywave, The xx, The Neighbourhood and more",
+      "art": "e0b14.png",
+      "trackIds": [
+        4,
+        1,
+        6
+      ],
+      "id": "indie",
+      "crop": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "quickCrop": [
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    "daily1": {
+      "title": "Daily Mix 1",
+      "subtitle": "Ayra Starr, Lil Kesh, Ed Sheeran and more",
+      "art": "5393c.png",
+      "quickArt": "9aaa9.png",
+      "crop": [
+        9.4945,
+        5.3972,
+        -2.044,
+        -1.5659
+      ],
+      "trackIds": [
+        5,
+        1,
+        2
+      ],
+      "id": "daily1",
+      "quickCrop": [
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    "daily5": {
+      "title": "Daily Mix 5",
+      "subtitle": "FRENSHIP, Brooke Sierra, Julia Wolf and more",
+      "art": "5393c.png",
+      "quickArt": "4ea49.png",
+      "crop": [
+        9.4945,
+        5.3972,
+        -4.8449,
+        -1.5659
+      ],
+      "trackIds": [
+        6,
+        3,
+        4
+      ],
+      "id": "daily5",
+      "quickCrop": [
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    "folk": {
+      "title": "Folk & Acoustic Mix",
+      "subtitle": "Canyon City, Crooked Still, Gregory Alan and more",
+      "art": "9eda7.png",
+      "quickArt": "a4c73.png",
+      "trackIds": [
+        1,
+        4,
+        3
+      ],
+      "id": "folk",
+      "crop": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "quickCrop": [
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    "daily4": {
+      "title": "Daily Mix 4",
+      "subtitle": "A fresh selection for your day",
+      "art": "46152.png",
+      "quickArt": "46152.png",
+      "trackIds": [
+        2,
+        6,
+        5
+      ],
+      "id": "daily4",
+      "crop": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "quickCrop": [
+        1,
+        1,
+        0,
+        0
+      ]
+    }
+  },
+  "quickMixes": [
+    "chill",
+    "pop",
+    "daily1",
+    "daily5",
+    "folk",
+    "daily4"
+  ],
+  "sections": [
+    {
+      "title": "Your top mixes",
+      "mixIds": [
+        "chill",
+        "pop",
+        "pheelz",
+        "indie",
+        "daily1"
+      ]
+    },
+    {
+      "title": "Made for you",
+      "mixIds": [
+        "folk",
+        "daily1",
+        "daily5",
+        "pop",
+        "pheelz"
+      ]
+    },
+    {
+      "title": "Recently played",
+      "mixIds": [
+        "chill",
+        "pop",
+        "pheelz",
+        "indie",
+        "folk"
+      ]
+    },
+    {
+      "title": "Jump back in",
+      "mixIds": [
+        "folk",
+        "daily1",
+        "daily5",
+        "pop",
+        "pheelz"
+      ]
+    },
+    {
+      "title": "Uniquely yours",
+      "mixIds": [
+        "chill",
+        "pop",
+        "pheelz",
+        "indie",
+        "folk"
+      ]
+    },
+    {
+      "title": "Just the hits",
+      "mixIds": [
+        "folk",
+        "daily1",
+        "daily5",
+        "pop",
+        "pheelz"
+      ]
+    }
+  ]
+}

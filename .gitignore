@@ -1,0 +1,15 @@
+build*/
+server/build*/
+.runtime/
+.env
+.env.*
+!.env.example
+*.sqlite3*
+*.db
+*.key
+*.pem
+*.p12
+*.jks
+*.log
+__pycache__/
+releases/

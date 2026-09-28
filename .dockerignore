@@ -1,0 +1,12 @@
+.runtime
+build*
+server/build*
+releases
+previews
+.git
+.github
+**/__pycache__
+*.sqlite3*
+*.log
+*.p12
+*.jks

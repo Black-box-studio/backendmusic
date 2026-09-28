@@ -1,0 +1,15 @@
+services:
+  api:
+    build:
+      context: ..
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    init: true
+    ports:
+      - "127.0.0.1:8787:8787"
+    volumes:
+      - music-data:/data
+    security_opt:
+      - no-new-privileges:true
+volumes:
+  music-data:
