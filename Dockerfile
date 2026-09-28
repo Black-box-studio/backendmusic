@@ -2,7 +2,9 @@ FROM ubuntu:26.04 AS build
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential cmake ninja-build libdrogon-dev qt6-base-dev libssl-dev \
-    libsqlite3-dev python3-dev python3-venv ca-certificates && rm -rf /var/lib/apt/lists/*
+    libsqlite3-dev libjsoncpp-dev uuid-dev zlib1g-dev libpq-dev \
+    default-libmysqlclient-dev libbrotli-dev libhiredis-dev libyaml-cpp-dev \
+    python3-dev python3-venv ca-certificates && rm -rf /var/lib/apt/lists/*
 WORKDIR /src
 COPY server/ server/
 COPY provider/ provider/
